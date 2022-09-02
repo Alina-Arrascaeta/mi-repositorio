@@ -1,0 +1,219 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+
+.paddingTB {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.footerBg {
+  background-color: rgb(250, 208, 71);
+  border: 3px solid black;
+}
+
+.footerBg:hover {
+  background-color: rgb(247, 216, 115);
+}
+
+.footerBg h3 {
+  color: yellow;
+  text-align: center;
+}
+
+.col-lg-12, .col-lg-6 {
+  padding-right: 0;
+  padding-left: 0;
+}
+
+.paddingT {
+  padding-top: 50px;
+  background-color: rgb(247, 216, 115);
+}
+
+.centrar {
+  text-align: center;
+  background-color: rgb(247, 216, 115);
+}
+
+.paddingLR {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.ico_foo {
+  transition: 1s;
+}
+
+.ico_foo:hover {
+  transform: translateY(-10px);
+  cursor: pointer;
+}
+
+.redesSociales {
+  transition: 1s;
+}
+
+.redesSociales:hover {
+  color: rgb(247, 216, 115);
+  cursor: pointer;
+}
+
+.container-fluid {
+  background-color: rgb(247, 216, 115);
+}
+
+.navbar-brand img {
+  width: 150px;
+}
+
+.btn btn-primary {
+  color: rgb(248, 196, 129);
+}
+
+.wapp2 {
+  background-color: rgba(255, 229, 145, 0.884);
+  display: inline-block;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  text-align: center;
+  position: fixed;
+  bottom: 150px;
+  right: 150px;
+  font-size: 28px;
+}
+
+.section2 {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+}
+
+.carousel-padre {
+  background-position: center;
+  background-size: 30%;
+  width: 50vw;
+  margin: 0 auto;
+}
+
+.imagen {
+  filter: grayscale(1);
+  transition: 0.3;
+  border-radius: 10px;
+}
+
+.imagen:hover {
+  /* filter: blur(1px); */
+  /* filter: opacity(0.3); */
+  filter: brightness(1);
+  /* filter: grayscale(0); */
+}
+
+.titulos {
+  border-bottom: black 3px solid;
+  margin: 29px;
+  padding: 5px;
+  text-align: center;
+  top: 0;
+  background-color: rgb(247, 216, 115);
+}
+
+.overFlow {
+  background-color: rgba(255, 229, 145, 0.884);
+  border: 2px black solid;
+  overflow: auto;
+  margin: 50px 25px;
+  padding: 12px 30px 50px 23px;
+}
+
+.enLinea {
+  background-position: center;
+  padding: 20px;
+  height: 100px;
+  width: 100px;
+  margin: 29px;
+  background-color: rgb(247, 216, 115);
+}
+
+p {
+  margin: 29px;
+}
+
+.titulos2 {
+  text-align: center;
+  top: 0;
+}
+
+span {
+  border-bottom: rgb(248, 190, 65) 3px solid;
+  margin: 100px;
+  padding: 5px;
+  text-align: center;
+  top: 0;
+}
+
+.wapp {
+  background-color: rgba(255, 229, 145, 0.882);
+  color: white;
+  display: inline-block;
+  height: 180px;
+  width: 180px;
+  text-align: center;
+  position: fixed;
+  bottom: 100px;
+  right: 150px;
+  font-size: 28px;
+  border-radius: 50%;
+}
+
+.wapp2:hover {
+  filter: brightness(0.5);
+}
+
+#seccion {
+  background-color: rgb(247, 216, 115);
+  /* Espacio interior */
+  padding: 70px;
+  /* Espacio exterior */
+  margin: 80px;
+  background-image: url("../img/logo AJNA FINAL_NOV.jpg");
+  background-size: 25%;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.animacion-giro {
+  background-color: rgb(6, 6, 167);
+  display: inline-block;
+  width: 300px;
+  height: 300px;
+  color: white;
+  -webkit-animation-name: girando;
+          animation-name: girando;
+  -webkit-animation-iteration-count: infinite;
+          animation-iteration-count: infinite;
+  -webkit-animation-duration: 10s;
+          animation-duration: 10s;
+}
+
+/* vista desktop */
+@media only screen and (min-width: 1024px) {
+  .navbar-expand-lg .navbar-collapse {
+    justify-content: flex-end;
+  }
+  .footerFlex {
+    display: flex;
+    justify-content: space-around;
+  }
+}
+/* vista mobile */
+@media only screen and (max-width: 767px) {
+  .footerFlex {
+    display: flex;
+    flex-direction: column;
+  }
+}/*# sourceMappingURL=main.css.map */
