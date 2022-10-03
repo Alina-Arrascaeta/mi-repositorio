@@ -1,7 +1,7 @@
 *{padding: 0;margin: 0; }
 .paddingTB{padding-top: 50px;padding-bottom: 50px;}
-.footerBg{background-color: rgb(250, 208, 71); 
-    border: 3px solid black;
+.footerBg{background-color: rgb(250, 208, 71);
+ ;
   }
   .footerBg:hover{
 
@@ -49,6 +49,20 @@
 
 }
 
+.wapp2:hover{
+
+    filter: brightness(0.5);
+   }
+
+   input{
+    /*
+        padding: 20px;
+        margin: 10px; */
+        background-color: #fee140;
+        transition: .3s;
+        border: none;
+    }
+
 .section2 {
 
     display: flex;
@@ -59,11 +73,18 @@
 }
 .carousel-padre{
 
-    background-position: center;
-    background-size: 30%;
-    width: 50vw;
-    margin: 0 auto;
+     margin-top: 10px;
+     background-position: center;
+
 }
+
+.carousel-padre img{
+
+    height: 60vh;
+
+}
+
+
 
 
 .imagen {
@@ -130,7 +151,7 @@ p {
 
 span{
     border-bottom: rgb(248, 190, 65) 3px solid;
-    margin: 100px;
+    margin: o;
     padding: 5px;
     text-align: center;
     top: 0;
@@ -154,10 +175,32 @@ span{
     }
 
 
-.wapp2:hover{
+    .float {
+        position: fixed;
+        width: 60px;
+        height: 60px;
+        bottom: 40px;
+        right: 40px;
+        background-color: #25d366;
+        color: #FFF;
+        border-radius: 50px;
+        text-align: center;
+        font-size: 30px;
+        box-shadow: 2px 2px 3px #999;
+        z-index: 100;
+      }
 
-    filter: brightness(0.5);
-   }
+      .float .my-float {
+        margin-top: 16px;
+      }
+
+      .float:hover {
+        text-decoration: none;
+        color: #25d366;
+        background-color: #fff;
+      }
+
+
 
    #seccion {
     background-color: rgba(247, 216, 115);
@@ -183,6 +226,224 @@ span{
     animation-duration: 10s;
 
 }
+
+
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 40px;
+    right: 40px;
+    background-color: #25d366;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+  }
+
+  .float .my-float {
+    margin-top: 16px;
+  }
+
+  .float:hover {
+    text-decoration: none;
+    color: #25d366;
+    background-color: #fff;
+  }
+
+
+  .banner {
+    padding-top: 40px;
+    padding-bottom: 45px;
+    text-align: center;
+    display: hidden;
+  }
+  
+  .banner img {
+    width: 40%;
+    animation-name: zoom;
+    animation-iteration-count: 1;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-delay: 0s;
+  }
+  
+  .banner .off {
+    margin-top: 37px;
+    margin-bottom: 37px;
+  }
+  .events_area {
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    width: 80%;
+
+  }
+  
+
+  
+  .events_area .single_event .event_details {
+
+    width: 315px;
+    padding: 20px;
+    color: black;
+    background-position: center;
+    
+  }
+  
+  .events_area .single_event .event_details .date {
+    color: #fdc632;
+    padding-right: 15px;
+    font-family: "Rubik", sans-serif;
+    font-size: 17px;
+  }
+  
+  .events_area .single_event .event_details .date span {
+    display: block;
+    color: #fdc632;
+    font-size: 28px;
+    font-weight: 500;
+  }
+  
+  .events_area .single_event .event_details p {
+    text-align: center;
+  }
+  
+  .events_area .single_event .event_details a {
+    font-size: 1.3rem;
+    font-weight: 10rem;
+    color: black;
+  }
+  
+  .events_area .single_event .event_details .time-location {
+    padding: 15px 5px 15px 5px;
+    font-size: 15px;
+    text-align: center;
+  }
+  
+  .events_area .single_event .event_details .time-location p span {
+    color: #998f8f;
+    font-size: 13px;
+    font-weight: 500;
+  }
+  .events_area {
+    width: 80%;
+    padding: 30px 30px 70px 30px;
+  }
+
+
+  @keyframes zoom {
+    0% {
+      transform: scale(1);
+    }
+    100% {
+      transform: scale(1.2);
+    }
+  }
+
+  #show-modal {
+    display: flex;
+    width: 100%;
+    text-align: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    background-color: #bc651a;
+    color: white;
+    padding: 12px 20px;
+    text-decoration: none;
+    transition: all 0.15s linear;
+  }
+  
+  #show-modal:hover {
+    cursor: pointer;
+    background-color: #523216;
+  }
+  
+  .modal {
+    position: fixed;
+    top: -100vh;
+    left: 0;
+    z-index: 99999999;
+    background: #bc651a;
+    width: 100vh;
+    opacity: 0;
+    transition: opacity 0.35s ease;
+  }
+  
+  .modal .content-modal {
+    width: 100%;
+    max-width: 500px;
+    position: fixed;
+    left: 50%;
+    top: -100vh;
+    transition: top 0.35s ease;
+    margin-left: -250px;
+    background: white;
+    box-shadow: 0 1px 2px #bc651a;
+    border-radius: 2px;
+    z-index: 99999999;
+  }
+  
+  .modal h2 {
+    padding: 0.5em;
+    text-align: center;
+    color: #bc651a;
+    margin: 0;
+  }
+  
+  .modal article {
+    height: 100px;
+    background: #bc651a;
+    font-size: 1.8rem;
+    text-align: center;
+    justify-content: center;
+  }
+  
+  .modal a:hover {
+    color: rgb(241, 177, 38);
+  }
+  
+  .modal:target {
+    opacity: 1;
+    top: 0;
+  }
+  
+  .modal:target .content-modal {
+    top: 50px;
+    transition: top 0.35 ease;
+  }
+  
+  .modal .btn-close-modal {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 99999991;
+  }
+  
+  .close-modal {
+    color: #e74c3c;
+    position: absolute;
+    top: 0.2em;
+    right: 0.375em;
+    margin: 0;
+    padding: 5px;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-decoration: none;
+  }
 /* vista desktop */
 @media only screen and (min-width: 1024px){
 .navbar-expand-lg .navbar-collapse{justify-content: flex-end;}

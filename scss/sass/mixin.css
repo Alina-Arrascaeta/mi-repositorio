@@ -1,1 +1,11 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");/*# sourceMappingURL=mixin.css.map */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap");
+.section2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.section2 {
+  padding: 10px;
+  text-align: center;
+  justify-content: center;
+}/*# sourceMappingURL=mixin.css.map */
